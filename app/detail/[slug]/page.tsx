@@ -17,7 +17,7 @@ export default async function Page ({params} : {params: { slug: string}}) {
     const itemData = item.data[0]
 
     const createdate = (dateString: string) => {
-        let date = new Date(dateString)
+        const date = new Date(dateString)
         return `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`
     }
 

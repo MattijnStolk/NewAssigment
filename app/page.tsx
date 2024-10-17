@@ -19,7 +19,7 @@ export default async function Home({searchParams} : {searchParams: {[key: string
 		<main className="">
 			<div className="w-screen h-screen flex flex-wrap">
 				{items.map((item: item) => {
-					return <ItemCard item={item} />
+					return <ItemCard key={item.data[0].nasa_id} item={item} />
 				})}
 			</div>
 		</main>

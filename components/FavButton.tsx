@@ -12,7 +12,7 @@ export default function FavButton ({item}:{item: item}) {
     }, [])
 
     const handleClick = (item: item) => {
-        let localFavs: item[] = JSON.parse(localStorage.getItem('favorites') ?? '[]')
+        const localFavs: item[] = JSON.parse(localStorage.getItem('favorites') ?? '[]')
     
         const itemIndex = localFavs.findIndex(fav => JSON.stringify(fav) === JSON.stringify(item))
     
